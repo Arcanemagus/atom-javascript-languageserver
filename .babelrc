@@ -9,8 +9,6 @@
     ["transform-export-extensions", {}],
     ["transform-do-expressions", {}],
     ["transform-function-bind", {}],
-    ["transform-object-rest-spread", {}],
-    ["transform-flow-strip-types", {}],
-    ["transform-react-jsx", {}]
+    ["transform-object-rest-spread", {}]
   ]
 }
