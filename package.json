@@ -7,7 +7,7 @@
   "main": "./build/lib/main",
   "scripts": {
     "clean": "rimraf build",
-    "compile": "babel lib --out-dir build/lib && babel test --out-dir build/test",
+    "compile": "babel lib --out-dir build/lib && babel test.js --out-dir build/test",
     "prepublish": "npm run clean && npm run compile",
     "test": "npm run compile && atom --test build/test",
     "watch": "babel lib --out-dir build/lib -w"
