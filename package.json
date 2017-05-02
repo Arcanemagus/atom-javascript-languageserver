@@ -6,7 +6,7 @@
   "license": "MIT",
   "main": "./build/lib/main",
   "scripts": {
-    "clean": "rm -rf build",
+    "clean": "rimraf build",
     "compile": "babel lib --out-dir build/lib && babel test --out-dir build/test",
     "prepublish": "npm run clean && npm run compile",
     "test": "npm run compile && atom --test build/test",
@@ -35,6 +35,7 @@
     "eslint-plugin-standard": "^2.1.1",
     "mocha": "^3.2.0",
     "mocha-appveyor-reporter": "^0.3.0",
+    "rimraf": "^2.6.1",
     "sinon": "^2.0.0"
   }
 }
